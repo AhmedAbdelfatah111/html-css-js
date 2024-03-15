@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Nike.png" ></a>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="#">Contact</a>
+                <a href="store.html">Store</a>
+            </nav>
+        </header>
+
+    <div class="container">
+        <br>
+            <br>
+        <div class="aaaa">
+            <form onsubmit="emailSend(); reset(); return false;">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+    
+                <label for="message">Order</label>
+                <textarea id="message" name="message" placeholder="Order" required></textarea>
+    </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="contact.js"></script>
+</body>
+</html>
